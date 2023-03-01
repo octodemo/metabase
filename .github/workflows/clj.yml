@@ -36,4 +36,11 @@ jobs:
           clj-watson-sha: "9972a33"
           clj-watson-tag: "v4.0.0"
           database-strategy: github-advisory
+          aliases: clojure-lsp,test 
           deps-edn-path: 'deps.edn'
+          output-type: 'stdout-simple'
+          suggest-fix: 'true'
+          fail-on-result: 'true'
+          output-file: result.txt
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
