@@ -32,3 +32,8 @@ jobs:
           
       - name: Dependencies scan
         uses: clj-holmes/clj-watson-action@main
+        with:
+          clj-watson-sha: "9972a33"
+          clj-watson-tag: "v4.0.0"
+          database-strategy: github-advisory
+          deps-edn-path: 'deps.edn'
